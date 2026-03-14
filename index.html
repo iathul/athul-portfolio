@@ -1,229 +1,379 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Athul Joy Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-    
-    nav {
+      nav {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         width: 100%;
-        z-index: 1000; 
+        z-index: 1000;
         background-color: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         border-bottom: 1px solid #e5e7eb;
-    }
+      }
 
-    body {
-        padding-top: 80px; 
-    }
+      body {
+        padding-top: 80px;
+      }
 
-  
-    .nav-link {
+      .nav-link {
         transition: color 0.2s ease;
-    }
-</style>
-</head>
-<body class="bg-slate-50 text-slate-900 font-sans antialiased">
-    
-<nav>
-    <div class="max-w-4xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-y-3">
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-900 font-sans antialiased">
+    <nav>
+      <div
+        class="max-w-4xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-y-3"
+      >
         <div class="flex items-center space-x-2">
-            <div class="w-2.5 h-2.5 bg-blue-600 rounded-full animate-pulse"></div>
-            <span class="font-mono font-bold tracking-tighter text-base whitespace-nowrap">ATHUL JOY</span>
+          <div class="w-2.5 h-2.5 bg-blue-600 rounded-full animate-pulse"></div>
+          <span
+            class="font-mono font-bold tracking-tighter text-base whitespace-nowrap"
+            >ATHUL JOY</span
+          >
         </div>
-        
-        <div class="flex items-center gap-x-6 text-[12px] md:text-sm font-bold text-slate-500 uppercase tracking-wide">
-            <a href="#experience" class="nav-link hover:text-blue-600">Experience</a>
-            <a href="#skills" class="nav-link hover:text-blue-600">Skills</a>
-            <a href="#contact" class="nav-link hover:text-blue-600">Contact</a>
+
+        <div
+          class="flex items-center gap-x-6 text-[12px] md:text-sm font-bold text-slate-500 uppercase tracking-wide"
+        >
+          <a href="#skills" class="nav-link hover:text-blue-600">Skills</a>
+          <a href="#experience" class="nav-link hover:text-blue-600"
+            >Experience</a
+          >
+          <a href="#contact" class="nav-link hover:text-blue-600">Contact</a>
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-  
-
-    <header class="max-w-4xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center gap-8 md:gap-12">
-    
-
-  <div class="relative shrink-0 p-1 rounded-2xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500">
-
-    <img 
-        src="athul_joy.jpg"
-        alt="Athul Joy"
-        class="w-32 h-32 md:w-40 md:h-40 rounded-2xl object-cover bg-white p-1 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-        style="image-rendering: -webkit-optimize-contrast;"
+    <header
+      class="max-w-4xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center gap-8 md:gap-12"
     >
+      <div
+        class="relative shrink-0 p-1 rounded-2xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500"
+      >
+        <img
+          src="athul_joy.jpg"
+          alt="Athul Joy"
+          class="w-32 h-32 md:w-40 md:h-40 rounded-2xl object-cover bg-white p-1 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+          style="image-rendering: -webkit-optimize-contrast"
+        />
+      </div>
 
-</div>
-    
-    <div class="text-center md:text-left">
+      <div class="text-center md:text-left">
         <h1 class="text-4xl md:text-6xl font-extrabold mb-4">
-            Hi, I'm <span class="text-blue-600"> ATHUL JOY</span>.
+          Hi, I'm <span class="text-blue-600"> ATHUL JOY</span>.
         </h1>
         <p class="text-lg text-slate-600 leading-relaxed max-w-xl text-justify">
-            I specialize in building scalable backend systems and distributed applications. 
-            I focus on designing reliable architectures that handle complex data efficiently and deliver seamless services.
+          I specialize in building scalable backend systems and distributed
+          applications. I focus on designing reliable architectures that handle
+          complex data efficiently and deliver seamless services.
         </p>
-    </div>
-</header>
+      </div>
+    </header>
 
-  <section id="skills" class="max-w-4xl mx-auto px-6 py-16 border-t border-slate-100">
-    <h2 class="text-2xl font-bold flex items-center text-slate-800 mb-10">
+    <section
+      id="skills"
+      class="max-w-4xl mx-auto px-6 py-16 border-t border-slate-100"
+    >
+      <h2 class="text-2xl font-bold flex items-center text-slate-800 mb-10">
         <span class="bg-blue-600 w-8 h-1 mr-3 rounded-full"></span>
         Tech Stack
-    </h2>
+      </h2>
 
-    <div class="space-y-10">
-        
+      <div class="space-y-10">
         <div class="border-l-2 border-slate-200 pl-6">
-            <h3 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Development</h3>
-            <p class="text-lg text-slate-700 font-medium leading-relaxed">
-                Javascript, Python, Node.js, Express.js, Fastify, Vue.js, Django, HTML
-            </p>
+          <h3
+            class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2"
+          >
+            Development
+          </h3>
+          <p class="text-lg text-slate-700 font-medium leading-relaxed">
+            Javascript, Python, Node.js, Express.js, Fastify, Vue.js, Django,
+            HTML
+          </p>
         </div>
 
         <div class="border-l-2 border-slate-200 pl-6">
-            <h3 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Data & Persistence</h3>
-            <p class="text-lg text-slate-700 font-medium leading-relaxed">
-                MongoDB, SQL
-            </p>
+          <h3
+            class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2"
+          >
+            Data & Persistence
+          </h3>
+          <p class="text-lg text-slate-700 font-medium leading-relaxed">
+            MongoDB, SQL
+          </p>
         </div>
 
         <div class="border-l-2 border-slate-200 pl-6">
-            <h3 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Cloud & DevOps</h3>
-            <p class="text-lg text-slate-700 font-medium leading-relaxed">
-                Docker, AWS, Linux
-            </p>
+          <h3
+            class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2"
+          >
+            Cloud & DevOps
+          </h3>
+          <p class="text-lg text-slate-700 font-medium leading-relaxed">
+            Docker, AWS, Linux
+          </p>
         </div>
+      </div>
+    </section>
 
-    </div>
-</section>
-    
-
-
-<section id="experience" class="max-w-4xl mx-auto px-6 py-12">
-    <h2 class="text-2xl font-bold mb-10 flex items-center text-slate-800">
+    <section id="experience" class="max-w-4xl mx-auto px-6 py-12">
+      <h2 class="text-2xl font-bold mb-10 flex items-center text-slate-800">
         <span class="bg-blue-600 w-8 h-1 mr-3 rounded-full"></span>
         Professional Experience
-    </h2>
-    
-    <div class="space-y-12">
+      </h2>
+
+      <div class="space-y-12">
         <div class="relative pl-8 border-l-2 border-slate-200">
-            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow-sm"></div>
-            
-            <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
-                <h3 class="font-bold text-xl text-slate-900">Backend Developer</h3>
-                <div class="text-sm font-mono text-slate-500 italic flex flex-col md:items-end">
-                    <span>2024 — Present</span>
-                    <span class="text-slate-400 not-italic">Kochi, India</span>
-                </div>
+          <div
+            class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow-sm"
+          ></div>
+
+          <div
+            class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1"
+          >
+            <h3 class="font-bold text-xl text-slate-900">Backend Developer</h3>
+            <div
+              class="text-sm font-mono text-slate-500 italic flex flex-col md:items-end"
+            >
+              <span>2024 — Present</span>
+              <span class="text-slate-400 not-italic">Kochi, India</span>
             </div>
-            
-            <a href="https://www.cavliwireless.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-blue-600 font-medium text-sm hover:underline mb-3">
-                Cavli Wireless
-                <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-            </a>
-            
-            <ul class="text-slate-600 text-sm space-y-2 list-disc list-outside ml-4 text-justify">
-                <li>Currently working on the development and enhancement of an in-house calibration tool that supports the production team in
-performing precise and efficient calibration processes.</li>
-                <li>Designed and implemented a Reeling API that automated the module-packing workflow, eliminating manual Excel-based
-processes and improving operational efficiency. The system has enabled the packing of 1.5 million+ modules and is actively
-used in production, ensuring fast and error-free handling at scale.</li>
-<li>Built a firmware management feature enabling production teams to upload firmware to S3 and auto-link versions to customers
-and variants. This automated firmware retrieval during flashing, reducing manual copy-paste effort across multiple machines
-and improving process reliability and consistency.</li>
-            </ul>
+          </div>
+
+          <a
+            href="https://www.cavliwireless.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center text-blue-600 font-medium text-sm hover:underline mb-3"
+          >
+            Cavli Wireless
+            <svg
+              class="w-3 h-3 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+              ></path>
+            </svg>
+          </a>
+
+          <ul
+            class="text-slate-600 text-sm space-y-2 list-disc list-outside ml-4 text-justify"
+          >
+            <li>
+              Currently working on the development and enhancement of an
+              in-house calibration tool that supports the production team in
+              performing precise and efficient calibration processes.
+            </li>
+            <li>
+              Designed and implemented a Reeling API that automated the
+              module-packing workflow, eliminating manual Excel-based processes
+              and improving operational efficiency. The system has enabled the
+              packing of 1.5 million+ modules and is actively used in
+              production, ensuring fast and error-free handling at scale.
+            </li>
+            <li>
+              Built a firmware management feature enabling production teams to
+              upload firmware to S3 and auto-link versions to customers and
+              variants. This automated firmware retrieval during flashing,
+              reducing manual copy-paste effort across multiple machines and
+              improving process reliability and consistency.
+            </li>
+          </ul>
         </div>
 
         <div class="relative pl-8 border-l-2 border-slate-200">
-            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-300 border-4 border-white"></div>
-            <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
-                <h3 class="font-bold text-xl text-slate-900">Backend Developer</h3>
-                <div class="text-sm font-mono text-slate-500 italic flex flex-col md:items-end">
-                    <span>2021 — 2024</span>
-                    <span class="text-slate-400 not-italic">Thiruvananthapuram, India</span>
-                </div>
+          <div
+            class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-300 border-4 border-white"
+          ></div>
+          <div
+            class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1"
+          >
+            <h3 class="font-bold text-xl text-slate-900">Backend Developer</h3>
+            <div
+              class="text-sm font-mono text-slate-500 italic flex flex-col md:items-end"
+            >
+              <span>2021 — 2024</span>
+              <span class="text-slate-400 not-italic"
+                >Thiruvananthapuram, India</span
+              >
             </div>
-            
-            <a href="https://lightrains.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-blue-600 font-medium text-sm hover:underline mb-3">
-                Lightrains Technolabs Pvt Ltd
-                <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-            </a>
-            
-            <ul class="text-slate-600 text-sm space-y-2 list-disc list-outside ml-4 text-justify">
-                <li>Designed and developed API services for an NFT marketplace using Node.js, Fastify, and MongoDB</li>
-                <li>Implemented database schema using Mongoose for efficient data management.</li>
-<li>Utilized web3.js to develop functionalities for seamless interaction with smart contracts.</li>
-            </ul>
+          </div>
+
+          <a
+            href="https://lightrains.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center text-blue-600 font-medium text-sm hover:underline mb-3"
+          >
+            Lightrains Technolabs Pvt Ltd
+            <svg
+              class="w-3 h-3 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+              ></path>
+            </svg>
+          </a>
+
+          <ul
+            class="text-slate-600 text-sm space-y-2 list-disc list-outside ml-4 text-justify"
+          >
+            <li>
+              Designed and developed API services for an NFT marketplace using
+              Node.js, Fastify, and MongoDB
+            </li>
+            <li>
+              Implemented database schema using Mongoose for efficient data
+              management.
+            </li>
+            <li>
+              Utilized web3.js to develop functionalities for seamless
+              interaction with smart contracts.
+            </li>
+          </ul>
         </div>
 
         <div class="relative pl-8 border-l-2 border-slate-200">
-            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-300 border-4 border-white"></div>
-            <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
-                <h3 class="font-bold text-xl text-slate-900">Software Developer</h3>
-                <div class="text-sm font-mono text-slate-500 italic flex flex-col md:items-end">
-                    <span>2020 — 2021</span>
-                    <span class="text-slate-400 not-italic">Kochi, India</span>
-                </div>
+          <div
+            class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-300 border-4 border-white"
+          ></div>
+          <div
+            class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1"
+          >
+            <h3 class="font-bold text-xl text-slate-900">Software Developer</h3>
+            <div
+              class="text-sm font-mono text-slate-500 italic flex flex-col md:items-end"
+            >
+              <span>2020 — 2021</span>
+              <span class="text-slate-400 not-italic">Kochi, India</span>
             </div>
-            
-            <a href="https://www.giholdingcorp.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-blue-600 font-medium text-sm hover:underline mb-3">
-                Global Invisions Group
-                <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-            </a>
-            
-            <ul class="text-slate-600 text-sm space-y-2 list-disc list-outside ml-4 text-justify">
-                <li>Developed API services and UI functionality for both client side and admin side using Vue.js, PHP Laravel and SQL for Emirates
-Nature-WWF volunteer program web application.</li>
-                <li>Developed API services and UI functionality using Vue.js, Django and SQLite for TARA (Aircraft maintenance data platform).</li>
-<li>Integrated Zoom APIs to enhance functionality and enable seamless integration with the Zoom video conferencing platform.</li>
-            </ul>
+          </div>
+
+          <a
+            href="https://www.giholdingcorp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center text-blue-600 font-medium text-sm hover:underline mb-3"
+          >
+            Global Invisions Group
+            <svg
+              class="w-3 h-3 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+              ></path>
+            </svg>
+          </a>
+
+          <ul
+            class="text-slate-600 text-sm space-y-2 list-disc list-outside ml-4 text-justify"
+          >
+            <li>
+              Developed API services and UI functionality for both client side
+              and admin side using Vue.js, PHP Laravel and SQL for Emirates
+              Nature-WWF volunteer program web application.
+            </li>
+            <li>
+              Developed API services and UI functionality using Vue.js, Django
+              and SQLite for TARA (Aircraft maintenance data platform).
+            </li>
+            <li>
+              Integrated Zoom APIs to enhance functionality and enable seamless
+              integration with the Zoom video conferencing platform.
+            </li>
+          </ul>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-        
-
-
-  
-
-
-<section id="contact" class="max-w-4xl mx-auto px-6 py-20">
-    <div class="bg-slate-900 rounded-3xl p-8 md:p-12 text-center text-white">
+    <section id="contact" class="max-w-4xl mx-auto px-6 py-20">
+      <div class="bg-slate-900 rounded-3xl p-8 md:p-12 text-center text-white">
         <h2 class="text-3xl font-bold mb-4">Let's build something together</h2>
         <p class="text-slate-400 mb-8 max-w-md mx-auto">
-            I'm currently open to new opportunities and interesting backend challenges.
+          I'm currently open to new opportunities and interesting backend
+          challenges.
         </p>
-        
+
         <div class="flex flex-col items-center gap-8">
-            <a href="mailto:a.athuljoy@gmail.com" class="w-full md:w-auto px-8 py-3 bg-blue-600 hover:bg-blue-500 rounded-lg font-bold transition-colors">
-                Email Me
+          <a
+            href="mailto:a.athuljoy@gmail.com"
+            class="w-full md:w-auto px-8 py-3 bg-blue-600 hover:bg-blue-500 rounded-lg font-bold transition-colors"
+          >
+            Email Me
+          </a>
+
+          <div
+            class="flex flex-wrap justify-center gap-x-8 gap-y-4 text-slate-400 font-mono text-sm"
+          >
+            <a
+              href="tel:+918086284165"
+              class="flex items-center hover:text-white transition-colors"
+            >
+              <svg
+                class="w-4 h-4 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                ></path>
+              </svg>
+              +918086284165
             </a>
 
-            <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 text-slate-400 font-mono text-sm">
-                <a href="tel:+918086284165" class="flex items-center hover:text-white transition-colors">
-                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                    +918086284165
-                </a>
+            <a
+              href="https://linkedin.com/in/athul-joy"
+              target="_blank"
+              class="hover:text-white transition-colors"
+              >LinkedIn</a
+            >
 
-                <a href="https://linkedin.com/in/athul-joy" target="_blank" class="hover:text-white transition-colors">LinkedIn</a>
-                
-                <a href="https://github.com/iathul" target="_blank" class="hover:text-white transition-colors">GitHub</a>
-            </div>
+            <a
+              href="https://github.com/iathul"
+              target="_blank"
+              class="hover:text-white transition-colors"
+              >GitHub</a
+            >
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<footer class="max-w-4xl mx-auto px-6 py-8 text-center text-slate-400 text-xs">
-    &copy; 2026 Athul Joy • Built for performance.
-</footer>
-</body>
+    <footer
+      class="max-w-4xl mx-auto px-6 py-8 text-center text-slate-400 text-xs"
+    >
+      &copy; 2026 Athul Joy • Built for performance.
+    </footer>
+  </body>
 </html>
